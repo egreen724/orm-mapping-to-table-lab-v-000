@@ -19,8 +19,10 @@ class Student
       name TEXT,
       grade TEXT
       )
-      SQL 
-      
+    SQL 
+    
+    DB[:conn].execute(sql, self.name, self.album)
+
   end
   
 end
